@@ -1,0 +1,17 @@
+@import '../../mixin.scss';
+
+.footer {
+    width: 1440px;
+    height: 158px;
+    background-image: url('../../../public/img/frontend.png');
+    background-repeat: no-repeat;
+    margin: 20px 0 0;
+
+    @include onPhone {
+        display: none;
+    }
+
+    @include onDesctop {
+        display: block;
+    }
+}

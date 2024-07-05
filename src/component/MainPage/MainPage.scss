@@ -1,0 +1,162 @@
+@import '../../mixin.scss';
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy';
+    color: white;
+    position: relative;
+
+    @include onPhone {
+        min-width: 348px;
+    }
+
+    @include onDesctop {
+        width: 1440px;
+    }
+
+    .main__container {
+        display: flex;
+        justify-content: space-between;
+
+        @include onPhone {
+            flex-direction: column;
+            min-width: 348px;
+            margin: 40px 0 0;
+        }
+
+        @include onDesctop {
+            margin: 112px 0 0;
+            width: 900px;
+            flex-direction: row;
+        }
+
+        .GiftAndMentor {
+
+            @include onPhone {
+                display: none;
+            }
+
+            @include onDesctop {
+                display: block;
+            }
+        }
+    }
+
+    .GiftAndMentor-second {
+
+        @include onPhone {
+            display: block;
+            margin: 0 0 45px;
+        }
+
+        @include onDesctop {
+            display: none;
+        }
+    }
+
+    .icons__container {
+
+        @include onPhone {
+            display: none;
+        }
+
+        @include onDesctop {
+            display: block;
+        }
+
+        .html-icon {
+            position: absolute;
+            left: 1317.61px;
+            top: 241.81px;
+            width: 88px;
+            height: 88px;
+        }
+
+        .html-spot {
+            position: absolute;
+            left: 1402px;
+            top: 260.45px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #F16529;
+        }
+
+        .css-icon {
+            position: absolute;
+            left: 1218.8px;
+            top: 364.22px;
+            width: 66.4px;
+            height: 85.45px;
+        }
+
+        .css-spot {
+            position: absolute;
+            left: 1270px;
+            top: 360.45px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #2965F1;
+        }
+
+        .js-icon {
+            position: absolute;
+            left: 1317.61px;
+            top: 404.2px;
+            width: 71.89px;
+            height: 72.94px;
+        }
+
+        .js-spot {
+            position: absolute;
+            top: 421.45px;
+            left: 1395px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #F0BE25;
+        }
+
+
+        .sub-icon {
+            position: absolute;
+            left: 1221px;
+            top: 498.06px;
+            width: 53.93px;
+            height: 53.93px;
+        }
+
+        .sub-spot {
+            position: absolute;
+            left: 1269px;
+            top: 484px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #FF9800;
+        }
+
+        .vs-icon {
+            position: absolute;
+            left: 1296px;
+            top: 568.29px;
+            transform: rotate(20.56 deg);
+            width: 60.62px;
+            height: 60.62px;
+        }
+
+        .vs-spot {
+            position: absolute;
+            left: 1362px;
+            top: 619px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #48AEF3;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+@import '../../mixin.scss';
+
+.main__left-sidebar {
+    display: flex;
+    flex-direction: column;
+
+    @include onPhone {
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include onDesctop {
+        align-items: start;
+    }
+
+    .main__box {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        background-color: #4252D1;
+        border-radius: 5px;
+
+        @include onPhone {
+            width: 89px;
+            height: 23.93px;
+            padding: 2px 0;
+        }
+
+        @include onDesctop {
+            width: 119px;
+            height: 32px;
+        }
+
+        .main__icon {
+
+            @include onPhone {
+                width: 14.21px;
+                height: 14.21px;
+                margin: 3px 2px 0 0;
+            }
+
+            @include onDesctop {
+                width: 19px;
+                height: 19px;
+                margin: 5px 5px 0 0;
+            }
+        }
+
+        .main__icon-text {
+            height: 22px;
+
+            @include onPhone {
+                margin: 2px 0 0;
+            }
+
+            @include onDesctop {
+                margin: 6px 0 0;
+            }
+        }
+    }
+
+    .main__title {
+        text-transform: uppercase;
+        color: #FF3459;
+        font-weight: 800;
+
+        @include onPhone {
+            font-size: 52.73px;
+            line-height: 64.59px;
+        }
+
+        @include onDesctop {
+            font-size: 77px;
+            line-height: 94.33px;
+            height: 95px;
+        }
+    }
+
+    .main__start-box {
+        display: flex;
+        align-items: center;
+        
+        @include onPhone {
+            width: 330px;
+            margin: 0 0 20px 40px;
+        }
+
+        @include onDesctop {
+            width: 427px;
+            height: 45px;
+            margin: 0 0 20px;
+        }
+
+        .main__photo {
+
+            @include onPhone {
+                width: 77.81px;
+                height: 32.23px;
+                margin: 0 10px 0 0;
+            }
+
+            @include onDesctop {
+                width: 109px;
+                height: 45px;
+                margin: 0 19px 0 0;
+            }
+        }
+
+        .main__text {
+            font-weight: 600;
+
+            @include onPhone {
+                font-size: 15px;
+                line-height: 17.89px;
+            }
+
+            @include onDesctop {
+                font-size: 21px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    .main__describe {
+
+        @include onPhone {
+            text-align: center;
+            width: 328px;
+            height: 64px;
+            font-size: 14px;
+            line-height: 20.72px;
+        }
+
+        @include onDesctop {
+            text-align: left;
+            width: 419px;
+            height: 82px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26.64px;
+        }
+    }
+}

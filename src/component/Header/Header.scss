@@ -1,0 +1,97 @@
+@import '../../mixin.scss';
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+
+    @include onPhone {
+        justify-content: center;
+        min-width: 320px;
+        height: 34px;
+        margin: 28px 0 0 28px;
+    }
+
+    @include onDesctop {
+        justify-content: space-between;
+        width: 900px;
+        height: 104px;
+        margin: 10px 0 0;
+    }
+
+    .header__logo {
+
+        @include onPhone {
+            width: 101px;
+            height: 32px;
+            margin: 0 20px 0 0;
+        }
+
+        @include onDesctop {
+            width: 182px;
+            height: 56px;
+        }
+    }
+
+    .header__box {
+        display: flex;
+
+        .header__date {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: #332F65;
+            font-weight: 600;
+
+            &:first-child {
+                margin: 0 18px 0 0;
+            }
+
+            @include onPhone {
+                width: 88px;
+                height: 24px;
+                font-size: 11px;
+                line-height: 8.31px;
+            }
+
+            @include onDesctop {
+                width: 141px;
+                height: 40px;
+                font-size: 14px;
+                line-height: 14px;
+            }
+
+            .header__icon {
+                margin: 0 5px 0 0;
+
+                &:first-child {
+
+                    @include onPhone {
+                        width: 12.55px;
+                        height: 12.55px;
+                    }
+
+                    @include onDesctop {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+
+                &:last-child {
+                    font-weight: bold;
+
+                    @include onPhone {
+                        width: 12.41px;
+                        height: 12.41px;
+                    }
+
+                    @include onDesctop {
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}

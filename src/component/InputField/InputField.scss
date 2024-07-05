@@ -1,0 +1,110 @@
+@import '../../mixin.scss';
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #303A53;
+    margin: 0;
+
+    @include onPhone {
+        width: 328px;
+        height: 423px;
+        border-radius: 8.96px;
+        margin: 20px 0 0 20px;
+    }
+
+    @include onDesctop {
+        width: 366px;
+        height: 474px;
+        border-radius: 10px;
+    }
+
+    .input__title {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 25.99px;
+        text-align: center;
+        margin: 0 0 20px;
+        height: 52px;
+
+        .input__title-box {
+            display: flex;
+            justify-content: space-between;
+
+            .pink {
+                color: #FF3459;
+            }
+        }
+
+        @include onPhone {
+            width: 255px;
+        }
+
+        @include onDesctop {
+            width: 255px;
+        }
+    }
+
+    .input__form {
+
+        @include onPhone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 328px;
+        }
+
+        @include onDesctop {
+            width: 248px;
+        }
+
+        .input__field {
+            background-color: #272D3D;
+            border: none;
+            margin: 0 0 15px;
+            padding: 17px 0 17px 25px;
+            border-radius: 5px;
+
+            @include onPhone {
+                width: 286px;
+            }
+
+            @include onDesctop {
+                width: 223px;
+            }
+        }
+
+        .input__button {
+            border-radius: 5px;
+            color: white;
+            border: none;
+            margin: 0 0 25px;
+            cursor: pointer;
+
+            @include onPhone {
+                width: 222.25px;
+                height: 45.55px;
+                background-color: #0048FF;
+            }
+
+            @include onDesctop {
+                width: 248px;
+                height: 51px;
+                background-color: #FF3459;
+            }
+        }
+    }
+
+    .input__text {
+        border-bottom: 1px solid white;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17.88px;
+        text-align: center;
+        //width: 250px;
+    }
+}
